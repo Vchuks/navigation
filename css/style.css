@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+
+}
+header{
+    background-color: #ffffff;
+    display: flex;
+    padding: 3em 7em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2{
+    font-weight: 700;
+    font-size: 24px;
+    color: #1E0E62;
+}
+
+.center-header a{
+    color: #1E0E62;
+    text-decoration: none;
+    padding-right: 30px;
+}
+.right-header{
+    display: flex;
+    gap: 40px
+}
+
+
+nav i {
+    font-size: 18px;
+    color: #1E0E62;
+}
+
+.sign-in, .sign-up{
+    border: none;
+}
+.sign-in{
+    font-weight: 500;
+    color: #1E0E62;
+    background-color: #ffffff;
+}
+
+.sign-up{
+    background-color: #25DAC5;
+    width: 100px;
+    padding: 12px 0;
+    border-radius: 100px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#menu{
+    display: none;
+}
+
+.hero-title{
+    font-size: 72px;
+    font-weight: 700;
+    color: #1E0E62;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.hero-content{
+    width: 570px;
+    color: #15143966;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 70px;
+    align-items: center;
+}
+
+.hero-button-one{
+    width: 300px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 100px;
+    background-color: #25DAC5;
+    border: 1px solid #25DAC5;
+    padding: 20px 20px;
+}
+
+.hero-button-two{
+    font-size: 18px;
+    color: #25DAC5;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    background-color: #ffffff;
+}
+
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    header{
+       padding: 2rem;
+    }
+
+    #menu{
+        display: block;
+        color: #1E0E62;
+    }
+
+    .center-header, .right-header{
+        display: none;
+    }
+    .hero-title{
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 600px) {
+    header{
+        padding: 1em;
+    }
+
+    #menu{
+        display: block;
+        color: #1E0E62;
+    }
+
+    .center-header, .right-header{
+        display: none;
+    }
+
+    .left-header h2{
+        font-size: 18px;
+    }
+
+    .hero-title{
+        font-size: 30px;
+    }
+
+    .hero-content{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .hero-buttons{
+        padding-top: 40px;
+    }
+
+    .hero-button-one{
+        width: 250px;
+        font-size: 18px;
+    }
+}
