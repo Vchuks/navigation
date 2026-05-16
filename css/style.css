@@ -107,7 +107,18 @@ nav i {
     border: none;
     background-color: #ffffff;
 }
+footer{
+    display: flex;
+    justify-content: center;
+}
 
+.footer-text{
+    width: 120px;
+    text-align: center;
+    color: #1E0E62;
+    font-weight: 500;
+    padding-top:10px ;
+}
 
 @media (min-width: 601px) and (max-width: 1000px) {
     header{
